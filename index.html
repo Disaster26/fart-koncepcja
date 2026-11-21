@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>Malowanie proszkowe Kościan - lakiernia proszkowa FART</title>
-<meta name="description" content="FART - lakiernia proszkowa w Kościanie. Malowanie proszkowe stali, aluminium i stali ocynkowanej do 7 m, piaskowanie i śrutowanie. Od 1995 roku. Tel. 602 282 436.">
+<meta name="description" content="FART - lakiernia proszkowa w Kościanie. Malowanie proszkowe stali, aluminium i stali ocynkowanej do 7 m oraz piaskowanie. Od 1995 roku. Wyceny: tel. 531 245 903.">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="image" href="img/hero-m.webp" media="(max-width:760px)" fetchpriority="high">
@@ -79,7 +79,8 @@ section{position:relative}
 /* services */
 .svc-line{position:relative;padding-top:0}
 .svc-line>.rail{margin:0 0 0}
-.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,44px)}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.4vw,44px);max-width:1400px;margin:0 auto}
+.svc .card img{aspect-ratio:16/10}
 .card{position:relative;padding-top:44px}
 .card .hang{position:absolute;top:-2px;left:50%;transform:translateX(-50%);width:14px;height:46px}
 .card .hang svg{width:14px;height:46px;display:block}
@@ -162,6 +163,17 @@ section{position:relative}
 .contact a,.contact p{font-size:1.02rem;text-decoration:none}
 .contact .big{font:700 clamp(1.5rem,2vw,1.9rem)/1.25 Saira,Arial,sans-serif}
 .contact .lab{color:var(--mut);font-size:.9rem;margin-top:14px}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:32px 0 8px}
+.who-c{position:relative;background:var(--grey);padding:26px 22px 22px;display:flex;flex-direction:column;gap:4px}
+.who-tab{position:absolute;left:0;top:0;width:100%;height:6px}
+.who-t{font:700 1.02rem/1.25 Saira,Arial,sans-serif;margin-bottom:6px}
+.who-n{font-weight:600}
+.who-n span{display:block;font-weight:400;color:var(--mut);font-size:.92rem}
+.who-c .big{font:700 clamp(1.45rem,1.9vw,1.8rem)/1.25 Saira,Arial,sans-serif;text-decoration:none}
+.who-c a{text-decoration:none}
+.who-d{color:var(--ink2);font-size:.94rem;margin-top:6px}
+@media (max-width:1240px) and (min-width:1021px){.who{grid-template-columns:1fr}}
+@media (max-width:520px){.who{grid-template-columns:1fr}}
 .form{background:var(--grey);padding:clamp(24px,3vw,48px);display:grid;grid-template-columns:1fr 1fr;gap:18px 20px}
 .form h3{grid-column:1/-1;font-size:1.6rem}
 .f{display:grid;gap:6px}
@@ -235,9 +247,9 @@ section{position:relative}
  .hero-act .btn{flex:1 1 100%}
  .band{height:8px}
  .sec-head{margin-bottom:36px}
- .svc{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:4vw;gap:16px;scrollbar-width:none;margin:0 -4vw;padding:0 4vw}
+ .svc{grid-template-columns:1fr;gap:12px}
  .svc::-webkit-scrollbar{display:none}
- .svc .card{flex:0 0 84%;scroll-snap-align:center}
+ .svc .card img{aspect-ratio:4/3}
  .svc-line>.rail{margin:0 -4vw}
  .card-b{padding:20px 20px 24px}
  .paint-list{columns:1}
@@ -265,13 +277,13 @@ section{position:relative}
   <nav class="nav" aria-label="Menu">
    <a href="#uslugi">Usługi</a><a href="#co-malujemy">Co malujemy</a><a href="#piec">Piec 7 m</a><a href="#opinie">Opinie</a><a href="#o-firmie">O firmie</a><a href="#wycena">Kontakt</a>
   </nav>
-  <a class="hd-tel" href="tel:+48602282436">602 282 436</a>
+  <a class="hd-tel" href="tel:+48531245903">531 245 903</a>
   <a class="btn" href="#wycena">Bezpłatna wycena</a>
   <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i><i></i></button>
  </div>
  <nav class="mnav" id="mnav" aria-label="Menu mobilne">
   <a href="#uslugi">Usługi</a><a href="#co-malujemy">Co malujemy</a><a href="#piec">Piec 7 m</a><a href="#opinie">Opinie</a><a href="#o-firmie">O firmie</a><a href="#wycena">Kontakt</a>
-  <a class="tel" href="tel:+48602282436">602 282 436</a>
+  <a class="tel" href="tel:+48531245903">Wyceny: 531 245 903</a>
   <a class="btn" href="#wycena">Bezpłatna wycena</a>
  </nav>
 </header>
@@ -286,10 +298,10 @@ section{position:relative}
   <div class="hero-txt">
    <p class="hero-info">FART · Kościan, ul. Promienista 8 · od 1995 roku</p>
    <h1>Malowanie proszkowe w Kościanie - kolor, który zostaje na metalu</h1>
-   <p class="hero-lead">Malujemy proszkowo stal, aluminium, stal ocynkowaną i kwasoodporną, elementy do 7 m długości. Przed malowaniem piaskujemy lub śrutujemy, żeby powłoka miała dobre podłoże.</p>
+   <p class="hero-lead">Malujemy proszkowo stal, aluminium, stal ocynkowaną i kwasoodporną, elementy do 7 m długości. Przed malowaniem piaskujemy, żeby powłoka miała dobre podłoże.</p>
    <div class="hero-act">
     <a class="btn" href="#wycena"><span class="sw" aria-hidden="true"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i></span>Wyceń element ze zdjęcia</a>
-    <a class="btn btn--ghost" href="tel:+48602282436">Zadzwoń: 602 282 436</a>
+    <a class="btn btn--ghost" href="tel:+48531245903">Zadzwoń: 531 245 903</a>
    </div>
   </div>
  </div>
@@ -299,7 +311,7 @@ section{position:relative}
 <section class="sec" id="uslugi">
  <div class="wrap">
   <div class="sec-head">
-   <h2>Malowanie proszkowe, piaskowanie i śrutowanie w jednym miejscu</h2>
+   <h2>Malowanie proszkowe i piaskowanie w jednym miejscu</h2>
    <p>Element przechodzi u nas całą drogę: od oczyszczenia z rdzy i starej farby, przez natrysk proszku, po wypalenie w piecu. Dlatego odpowiadamy za trwałość powłoki od początku do końca.</p>
   </div>
   <div class="svc-line">
@@ -321,15 +333,6 @@ section{position:relative}
       <div class="card-b"><h3>Piaskowanie</h3>
        <p>Najlepsze przygotowanie stali pod lakierowanie proszkowe. Oczyszcza także zakamarki i wgłębienia, gdzie szlifowanie nie sięga.</p>
        <ul><li>renowacja elementów stalowych</li><li>usunięcie rdzy i starych powłok</li><li>ochrona metalu przed korozją</li></ul>
-      </div></div>
-    </article>
-    <article class="card">
-     <span class="hang" aria-hidden="true"><svg viewBox="0 0 14 46"><path d="M7 0v26a5 5 0 1 1-5 5" fill="none" stroke="#2A2E35" stroke-width="2.4"/></svg></span>
-     <div class="card-in"><div class="tab c3"></div>
-      <img src="img/srutowanie.webp" width="800" height="534" alt="Śrutowanie konstrukcji stalowej" loading="lazy">
-      <div class="card-b"><h3>Śrutowanie</h3>
-       <p>Śrut metaliczny czyści, wzmacnia i matowi powierzchnię. Większa chropowatość to lepsza przyczepność każdej farby.</p>
-       <ul><li>usunięcie rdzy i resztek farb</li><li>matowienie pod nowe powłoki</li><li>skuteczniejsze niż papier ścierny</li></ul>
       </div></div>
     </article>
    </div>
@@ -426,7 +429,7 @@ section{position:relative}
   <figure class="about-img"><img src="img/litery.webp" width="640" height="853" alt="Duże elementy z blachy po malowaniu proszkowym w hali FART" loading="lazy"></figure>
   <div>
    <h2>Od 1995 roku w Kościanie</h2>
-   <p>FART to lakiernia proszkowa z Kościana. Malujemy proszkowo, piaskujemy i śrutujemy dla firm i klientów indywidualnych, od pojedynczych detali po duże konstrukcje.</p>
+   <p>FART to lakiernia proszkowa z Kościana. Malujemy proszkowo i piaskujemy dla firm i klientów indywidualnych, od pojedynczych detali po duże konstrukcje.</p>
    <p>Stałym partnerom oferujemy współpracę długoterminową: pewne terminy, rzetelne wykonanie i korzystniejsze warunki przy stałych zamówieniach. Zlecenia realizujemy w ustalonym terminie, bo wiemy, że od tego zależy praca naszych klientów.</p>
    <div class="places"><span><i class="c1"></i>Kościan</span><span><i class="c2"></i>Poznań</span><span><i class="c3"></i>Śrem</span><span><i class="c4"></i>Gostyń</span><span><i class="c1"></i>cała Polska</span></div>
   </div>
@@ -439,14 +442,26 @@ section{position:relative}
    <h2>Bezpłatna wycena ze zdjęcia</h2>
    <ol class="steps">
     <li>Wyślij zdjęcie elementu, materiał i wymiary - formularzem albo mailem.</li>
-    <li>Sprawdzamy, czy potrzebne jest piaskowanie lub śrutowanie, i przygotowujemy wycenę.</li>
-    <li>Kontaktujemy się z Tobą, ustalamy szczegóły i termin realizacji.</li>
+    <li>Kierownik lakierni sprawdza, czy potrzebne jest piaskowanie, i przygotowuje wycenę.</li>
+    <li>Oddzwaniamy, ustalamy szczegóły, termin przywozu i odbioru.</li>
    </ol>
+   <div class="who">
+    <div class="who-c">
+     <span class="who-tab c3" aria-hidden="true"></span>
+     <p class="who-t">Wyceny, zlecenia, terminy</p>
+     <p class="who-n">Artur Nejdora<span>kierownik lakierni</span></p>
+     <a class="big" href="tel:+48531245903">531 245 903</a>
+     <p class="who-d">Zapytania ofertowe, kalkulacje, przywóz i odbiór elementów.</p>
+    </div>
+    <div class="who-c">
+     <span class="who-tab c4" aria-hidden="true"></span>
+     <p class="who-t">Biuro: księgowość i sprawy ogólne</p>
+     <a class="big" href="tel:+48602282436">602 282 436</a>
+     <a href="mailto:biuro@malowanie.net.pl">biuro@malowanie.net.pl</a>
+     <p class="who-d">Faktury, płatności, kadry i pozostałe sprawy firmy.</p>
+    </div>
+   </div>
    <div class="contact">
-    <a class="big" href="tel:+48602282436">602 282 436</a>
-    <a class="big" href="tel:+48600980926">600 980 926</a>
-    <p class="lab">E-mail</p>
-    <a href="mailto:biuro@malowanie.net.pl">biuro@malowanie.net.pl</a>
     <p class="lab">Adres</p>
     <p>ul. Promienista 8, 64-000 Kościan</p>
     <p class="lab">Godziny</p>
@@ -475,9 +490,9 @@ section{position:relative}
  <div class="band" aria-hidden="true" style="height:6px"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i></div>
  <div class="wrap">
   <div class="ft-grid">
-   <div><span class="ft-logo"><img src="img/logo.webp" width="480" height="179" alt="FART" loading="lazy"></span><p>Lakiernia proszkowa: malowanie proszkowe, piaskowanie, śrutowanie.<br>ul. Promienista 8, 64-000 Kościan</p></div>
-   <div><h4>Kontakt</h4><p><a href="tel:+48602282436">602 282 436</a><br><a href="tel:+48600980926">600 980 926</a><br><a href="mailto:biuro@malowanie.net.pl">biuro@malowanie.net.pl</a></p></div>
-   <div><h4>Usługi</h4><p><a href="#uslugi">Malowanie proszkowe</a><br><a href="#uslugi">Piaskowanie</a><br><a href="#uslugi">Śrutowanie</a></p></div>
+   <div><span class="ft-logo"><img src="img/logo.webp" width="480" height="179" alt="FART" loading="lazy"></span><p>Lakiernia proszkowa: malowanie proszkowe i piaskowanie.<br>ul. Promienista 8, 64-000 Kościan</p></div>
+   <div><h4>Kontakt</h4><p>Wyceny i zlecenia:<br><a href="tel:+48531245903">531 245 903</a><br>Biuro:<br><a href="tel:+48602282436">602 282 436</a><br><a href="mailto:biuro@malowanie.net.pl">biuro@malowanie.net.pl</a></p></div>
+   <div><h4>Usługi</h4><p><a href="#uslugi">Malowanie proszkowe</a><br><a href="#uslugi">Piaskowanie</a></p></div>
    <div><h4>Godziny</h4><p>pon. - pt. 7:00 - 16:00<br>sobota, niedziela: zamknięte</p></div>
   </div>
   <div class="ft-bot"><span>© <span id="yr">2026</span> FART Lakiernia proszkowa · Kościan</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=malowanie.net.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
