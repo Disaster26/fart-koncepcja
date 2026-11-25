@@ -444,7 +444,15 @@ body{font-size:16px}
 .gal img,.ggrid img{aspect-ratio:1/1}
 .split figure.nat{max-width:300px;margin:0 auto}
 }
-.btn{line-height:1.2;text-align:center;padding-top:8px;padding-bottom:8px}</style>
+.btn{line-height:1.2;text-align:center;padding-top:8px;padding-bottom:8px}
+@media (max-width:1020px){
+.mnav{display:flex;flex-wrap:wrap;align-content:flex-start;max-height:calc(100vh - var(--hh));max-height:calc(100dvh - var(--hh));padding:4px 4vw calc(14px + env(safe-area-inset-bottom))}
+.mnav>a,.mnav>.sub{flex:0 0 100%}
+.mnav a{padding:10px 0;font-size:1.08rem}
+.mnav .sub a{padding:8px 0 8px 18px;font-size:.95rem}
+.mnav .tel{flex:0 1 auto;font-size:1.02rem;padding:14px 14px 0 0;margin-top:10px;white-space:nowrap}
+.mnav .btn{flex:1 1 170px;width:auto;margin-top:10px}
+}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://malowanie.net.pl/#firma","name":"FART Lakiernia proszkowa","legalName":"Przedsiębiorstwo Produkcyjno-Usługowe „FART” M.P. Kaczmarek","description":"Lakiernia proszkowa w Kościanie: malowanie proszkowe stali, aluminium, stali ocynkowanej i kwasoodpornej, elementy do 7 m, piaskowanie.","url":"https://malowanie.net.pl/","logo":"https://malowanie.net.pl/img/logo.png","image":"https://malowanie.net.pl/img/hero-1280.webp","telephone":"+48531245903","email":"biuro@malowanie.net.pl","foundingDate":"1995","taxID":"6981004726","address":{"@type":"PostalAddress","streetAddress":"ul. Promienista 4","postalCode":"64-000","addressLocality":"Kościan","addressRegion":"wielkopolskie","addressCountry":"PL"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"16:00"}],"areaServed":[{"@type":"City","name":"Kościan"},{"@type":"City","name":"Poznań"},{"@type":"City","name":"Śrem"},{"@type":"City","name":"Gostyń"},{"@type":"Country","name":"Polska"}],"contactPoint":[{"@type":"ContactPoint","contactType":"sales","telephone":"+48531245903","description":"Wyceny, zlecenia i terminy","availableLanguage":"pl"},{"@type":"ContactPoint","contactType":"billing","telephone":"+48602282436","email":"biuro@malowanie.net.pl","description":"Biuro: księgowość i sprawy ogólne","availableLanguage":"pl"}],"knowsAbout":["malowanie proszkowe","lakierowanie proszkowe","piaskowanie"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Malowanie proszkowe","url":"https://malowanie.net.pl/malowanie-proszkowe/"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Piaskowanie","url":"https://malowanie.net.pl/piaskowanie/"}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"FART Lakiernia proszkowa","url":"https://malowanie.net.pl/","inLanguage":"pl-PL","publisher":{"@id":"https://malowanie.net.pl/#firma"}}</script>
 <script src="site.js" defer></script>
 </head>

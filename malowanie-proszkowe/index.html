@@ -443,7 +443,15 @@ body{font-size:16px}
 .gal img,.ggrid img{aspect-ratio:1/1}
 .split figure.nat{max-width:300px;margin:0 auto}
 }
-.btn{line-height:1.2;text-align:center;padding-top:8px;padding-bottom:8px}</style>
+.btn{line-height:1.2;text-align:center;padding-top:8px;padding-bottom:8px}
+@media (max-width:1020px){
+.mnav{display:flex;flex-wrap:wrap;align-content:flex-start;max-height:calc(100vh - var(--hh));max-height:calc(100dvh - var(--hh));padding:4px 4vw calc(14px + env(safe-area-inset-bottom))}
+.mnav>a,.mnav>.sub{flex:0 0 100%}
+.mnav a{padding:10px 0;font-size:1.08rem}
+.mnav .sub a{padding:8px 0 8px 18px;font-size:.95rem}
+.mnav .tel{flex:0 1 auto;font-size:1.02rem;padding:14px 14px 0 0;margin-top:10px;white-space:nowrap}
+.mnav .btn{flex:1 1 170px;width:auto;margin-top:10px}
+}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona główna","item":"https://malowanie.net.pl/"},{"@type":"ListItem","position":2,"name":"Usługi","item":"https://malowanie.net.pl/oferta/"},{"@type":"ListItem","position":3,"name":"Malowanie proszkowe","item":"https://malowanie.net.pl/malowanie-proszkowe/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Malowanie proszkowe","serviceType":"Malowanie proszkowe","url":"https://malowanie.net.pl/malowanie-proszkowe/","description":"Malowanie proszkowe stali, aluminium, stali ocynkowanej i kwasoodpornej, elementy do 7 m długości.","provider":{"@id":"https://malowanie.net.pl/#firma"},"areaServed":[{"@type":"City","name":"Kościan"},{"@type":"City","name":"Poznań"},{"@type":"City","name":"Śrem"},{"@type":"City","name":"Gostyń"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ile kosztuje malowanie proszkowe?","acceptedAnswer":{"@type":"Answer","text":"Cena zależy od wielkości i liczby elementów, materiału, z jakiego są wykonane, oraz od tego, czy trzeba je wcześniej piaskować. Najszybciej wycenimy element na podstawie zdjęcia i wymiarów - wyślij formularz albo zadzwoń."}},{"@type":"Question","name":"Jakie elementy można malować proszkowo?","acceptedAnswer":{"@type":"Answer","text":"Malujemy elementy ze stali, stali ocynkowanej, aluminium i stali kwasoodpornej, od drobnych detali po konstrukcje o długości do 7 m."}},{"@type":"Question","name":"Czy farba proszkowa jest odporna na warunki atmosferyczne?","acceptedAnswer":{"@type":"Answer","text":"Tak. Powłoka proszkowa jest wytrzymała i odporna na mróz, śnieg, sól i promieniowanie UV, dlatego dobrze sprawdza się na bramach, ogrodzeniach i balustradach."}},{"@type":"Question","name":"Jak dobrać kolor farby proszkowej?","acceptedAnswer":{"@type":"Answer","text":"Pracujemy na palecie RAL. Do wyboru jest 180 kolorów z palety RAL i 156 barw spoza niej, w różnych strukturach. Kolor najlepiej podać w zapytaniu, na przykład RAL 7016."}}]}</script>
 <script src="../site.js" defer></script>
 </head>
